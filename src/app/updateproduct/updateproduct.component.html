@@ -1,0 +1,20 @@
+<h2 class="text-center">UPDATE PRODUCT</h2>
+
+<div class="container">
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="pid">PRODUCTID</label>
+        <input type="text" class="form-control" id="pid" [(ngModel)]="product.id" name="id">
+    </div>
+    <div class="form-group">
+        <label for="pname">PRODUCTNAME</label>
+        <input type="text" class="form-control" id="pname" [(ngModel)]="product.name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="price">PRODUCTPRICE</label>
+        <input type="text" class="form-control" id="price" [(ngModel)]="product.price" name="price">
+    </div>
+        <button class="btn btn-success" type="submit">UPDATE</button>
+</form>
+ 
+</div>
